@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>우림이 바보</title>
+        <style>
+            .idiot {
+                color: tomato;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="urim">우림이 바보</h1>
+
+        <script>
+            const urim = document.getElementById("urim");
+
+            urim.addEventListener("mouseenter", () => {
+                urim.innerText = "우림이 똥멍청이!";
+                urim.classList.add("idiot")
+            });
+
+            urim.addEventListener("mouseleave", () => {
+                urim.innerText = "우림이 바보";
+                urim.classList.remove("idiot");
+            });
+
+            urim.addEventListener("click", () => {
+                urim.innerText += "!";
+            });
+        </script>
+    </body>
+</html>
